@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>sunnysec.com</groupId>
+  <artifactId>jfx.project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>jfx.project</name>
+  
+  
+    <!-- define the common properties used throughout the modules - allows us to keep things consistent -->
+	<properties>
+		<!-- 
+		<org.springframework.version>3.1.3.RELEASE</org.springframework.version>
+		<maven-bundle-plugin.version>2.5.3</maven-bundle-plugin.version>
+		<org.codehaus.jackson.version>1.9.5</org.codehaus.jackson.version>
+		 -->
+		<org.slf4j.version>1.6.1</org.slf4j.version>
+		<log4j.version>1.2.16</log4j.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.8</jdk.version>
+		<org.controlsfx.version>8.20.8</org.controlsfx.version>
+	</properties>
+
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>sunnysec maven repository</name>
+			<url>http://192.168.0.211:8081/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+
+		<repository>
+			<id>releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://192.168.0.211:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://192.168.0.211:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+  
+  
+</project>
