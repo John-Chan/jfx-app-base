@@ -22,7 +22,7 @@
 		<org.controlsfx.version>8.20.8</org.controlsfx.version>
 	</properties>
 
-
+<!-- 
 	<repositories>
 		<repository>
 			<id>nexus</id>
@@ -45,9 +45,9 @@
 		</snapshotRepository>
 	</distributionManagement>
   
-  
-	<modules>
+   -->
+<!-- 	<modules>
 		<module>jfx.app.base</module>
 		<module>jfx.app.simples</module>
-  </modules>
+  </modules> -->
 </project>
